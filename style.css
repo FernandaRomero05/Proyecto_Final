@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1e1; /* Color tierra suave */
+    color: #3e2723;
+}
+
+/* Header */
+header {
+    background-color: #6d4c41;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+    background-color: #3e2723;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.content-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.image-item {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Imágenes circulares */
+.circle-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Flexbox para los integrantes */
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.member {
+    text-align: center;
+}
+
+.member p {
+    font-size: 1.1em;
+    color: #5d4037;
+}
+
+/* Botones */
+button {
+    background-color: #5d4037; /* Marrón oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #3e2723; /* Color al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #6d4c41;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para los testimonios */
+blockquote {
+    font-style: italic;
+    color: #3e2723;
+    padding: 15px;
+    background-color: #e8eaf6;
+    border-left: 5px solid #5d4037;
+}
+
+/* Estilos para las redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #3e2723;
+    font-weight: bold;
+}
+
+.social-icon:hover {
+    color: #5d4037;
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    /* Navegación en formato vertical */
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .image-item {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Flex para integrantes en formato vertical */
+    .flex-container {
+        flex-direction: column;
+    }
+}
